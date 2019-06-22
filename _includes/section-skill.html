@@ -1,0 +1,109 @@
+<section>
+    <h2 class="my-5 h3 text-center">My Skills</h2>
+    <!--First row-->
+    <div class="row features-small mb-5 mt-3 wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+
+        <!--First column-->
+        <div class="col-md-6">
+
+            <!--First row-->
+            <div class="row mb-3">
+                <div class="col-12">
+                    <h6 class="feature-title">Technical skills</h6>
+                    <hr class="my-3">
+                    <div class="row ml-1">
+                        <!-- for-loop -->
+                        {% for skill in page.skills %}
+                        <div class="chip chip-md indigo lighten-1 white-text">
+                            {{ skill }}
+                        </div>
+                        {% endfor %}
+                        <!-- END for-loop -->
+                    </div>
+                    <div style="height:15px"></div>
+                </div>
+            </div>
+            <!--/First row-->
+            <div class="row">
+                <div class="col-6">
+                    <h6 class="feature-title">Soft skills</h6>
+                    <hr class="my-3">
+                    <div class="row ml-1">
+                        <!-- for-loop -->
+                        {% for skill in page.soft-skills %}
+                        <div class="chip chip-md indigo lighten-1 white-text">
+                            {{ skill }}
+                        </div>
+                        {% endfor %}
+                        <!-- END for-loop -->
+                    </div>
+                    <div style="height:15px"></div>
+                </div>
+                <div class="col-6">
+                    <h6 class="feature-title">Tools/Application</h6>
+                    <hr class="my-3">
+                    <div class="row ml-1">
+                        <!-- for-loop -->
+                        {% for skill in page.software-tools %}
+                        <div class="chip chip-md indigo lighten-1 white-text">
+                            {{ skill }}
+                        </div>
+                        {% endfor %}
+                        <!-- END for-loop -->
+                    </div>
+                    <div style="height:15px"></div>
+                </div>
+            </div>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-6 flex-center">
+            <img src="/assets/images/tools3.jpg" alt="shayne tools displayed on iPhone" class="img-fluid z-depth-1-half">
+        </div>
+        <!--/Second column-->
+    </div>
+    <!--/First row-->
+</section>
+
+<style>
+    .chip {
+        vertical-align: middle;
+        padding: 0 15px;
+        margin: 0 5px 10px 0;
+    }
+    
+    .chip.chip-md {
+        height: 42px;
+        line-height: 42px;
+        border-radius: 21px;
+    }
+    
+    .chip.chip-md img {
+        height: 42px;
+        width: 42px;
+    }
+    
+    .chip.chip-md .close {
+        height: 42px;
+        line-height: 42px;
+        border-radius: 21px;
+    }
+    
+    .chip.chip-lg {
+        height: 52px;
+        line-height: 52px;
+        border-radius: 26px;
+    }
+    
+    .chip.chip-lg img {
+        height: 52px;
+        width: 52px;
+    }
+    
+    .chip.chip-lg .close {
+        height: 52px;
+        line-height: 52px;
+        border-radius: 26px;
+    }
+</style>

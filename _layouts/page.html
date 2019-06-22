@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <!-- STYLESHEET -->
+    {% include stylesheet.html %}
+</head>
+<html lang="en">
+
+<!-- ---------------------------------------- -->
+<!-- Main Navigation -->
+<header>
+    {% include nav.html %}
+</header>
+<!-- End Main Navigation -->
+
+
+
+<!-- ---------------------------------------- -->
+<!-- Main Layout -->
+<main class="mt-5">
+    <!-- Section Parallax -->
+    {% include section-jarallax.html %}
+
+    <div class="container">
+
+        <!-- IF 'About' page -->
+        <!-- --------------  -->
+        {% if page.title == 'About' %}
+
+        <!-- Section Content -->
+        {% include section-content.html %}
+        <hr class="my-5">
+        <!-- Section skills -->
+        {% include section-skill.html %}
+        <hr class="my-5">
+        <!-- Section hobbies -->
+        {%include section-hobbies.html %}
+        <hr class="my-5">
+        <!-- -- -->
+        {% endif %}
+
+        <!-- IF 'Contact' page -->
+        <!-- ----------------  -->
+        {% if page.title == 'Contact' %}
+        <!-- Section contact -->
+        {%include section-contact-form.html %}
+        <!-- -- -->
+        {% endif %}
+    </div>
+</main>
+<!-- End Main Layout -->
+
+
+
+<!-- ---------------------------------------- -->
+<!-- Footer -->
+<footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+    {% include footer.html %}
+</footer>
+<!-- End Footer -->
+
+<!-- SCRIPTS -->
+{% include scripts.html %}
+
+</html>

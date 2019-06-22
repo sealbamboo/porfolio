@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <!-- STYLESHEET -->
+    {% include stylesheet.html %}
+</head>
+<html lang="en">
+
+<!-- ---------------------------------------- -->
+<!-- Main Navigation -->
+<header>
+    {% include nav.html %}
+</header>
+<!-- End Main Navigation -->
+
+
+
+<!-- ---------------------------------------- -->
+<!-- Main Layout -->
+<main class="mt-5 pt-5">
+    <div class="container">
+        <!-- Section: Post -->
+        <section class="mt-4">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column (CONTENT)-->
+                <div class="col-md-8 mb-4">
+
+
+                    <!--Featured Image-->
+                    <div class="card mb-4 wow fadeIn">
+
+                        <img src="/assets/images/img-default.jpg" class="img-fluid" alt="">
+
+                    </div>
+                    <!--/.Featured Image-->
+
+                    <!--Card-->
+                    <div class="card mb-4 wow fadeIn">
+                        <!-- Card content -->
+                        <div class="card-body">
+                            <p class="h5 my-4">{{ page.title }}</p>
+                            <p>{{ content }}</p>
+                        </div>
+                    </div>
+                    <!-- /.Card -->
+
+                    <!--Reply-->
+                    <div class="card mb-3 wow fadeIn">
+                        <div class="card-header font-weight-bold">Leave a reply</div>
+                        <div class="card-body">
+
+                            <!-- Default form reply -->
+                            <form>
+
+                                <!-- Comment -->
+                                <div class="form-group">
+                                    <label for="replyFormComment">Your comment</label>
+                                    <textarea class="form-control" id="replyFormComment" rows="5"></textarea>
+                                </div>
+
+                                <!-- Name -->
+                                <label for="replyFormName">Your name</label>
+                                <input type="email" id="replyFormName" class="form-control">
+
+                                <br>
+
+                                <!-- Email -->
+                                <label for="replyFormEmail">Your e-mail</label>
+                                <input type="email" id="replyFormEmail" class="form-control">
+
+
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-info btn-md" type="submit">Post</button>
+                                </div>
+                            </form>
+                            <!-- Default form reply -->
+
+
+
+                        </div>
+                    </div>
+                    <!--/.Reply-->
+                </div>
+
+                <!-- Grid column (RIGHT) -->
+                <div class="col-md-4 mb-4">
+                    {% include post-right-content.html %}
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<!-- End Main Layout -->
+
+
+
+<!-- ---------------------------------------- -->
+<!-- Footer -->
+<footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+    {% include footer.html %}
+</footer>
+<!-- End Footer -->
+
+<!-- SCRIPTS -->
+{% include scripts.html %}
+
+</html>
