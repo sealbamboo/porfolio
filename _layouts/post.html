@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{{ title }}</title>
+    <title>{{ site.title }}</title>
     <!-- STYLESHEET -->
     {% include stylesheet.html %}
 </head>
@@ -23,6 +23,8 @@
 <!-- Main Layout -->
 <main class="mt-5 pt-5">
     <div class="container">
+        <!-- Section Parallax -->
+        {% include section-jarallax.html %}
         <!-- Section: Post -->
         <section class="mt-4">
             <!-- Grid row -->
@@ -34,7 +36,7 @@
                     <!--Featured Image-->
                     <div class="card mb-4 wow fadeIn">
 
-                        <img src="{{site.baseurl}}/assets/images/img-default.jpg" class="img-fluid" alt="">
+                        <img src="{{site.baseurl}}/assets/images/{{ page.image | 'img-default.jpg' }}" class="img-fluid" alt="">
 
                     </div>
                     <!--/.Featured Image-->
@@ -43,7 +45,7 @@
                     <div class="card mb-4 wow fadeIn">
                         <!-- Card content -->
                         <div class="card-body">
-                            <p class="h5 my-4">{{ page.title }}</p>
+                            <!-- <p class="h5 my-4">{{ page.title }}</p> -->
                             <p>{{ content }}</p>
                         </div>
                     </div>
@@ -110,3 +112,25 @@
 {% include scripts.html %}
 
 </html>
+
+
+<style>
+    .md-img {
+        position: relative;
+        display: inline-block;
+        margin: 10px 0 25px 0;
+    }
+    
+    .md-img-1 {
+        width: 100%;
+    }
+    
+    .md-img-2 {
+        width: 49%;
+        margin: 0 1%;
+    }
+    
+    .clear-both {
+        clear: both;
+    }
+</style>;

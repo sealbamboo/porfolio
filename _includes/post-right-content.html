@@ -75,8 +75,8 @@
 
                     <!-- Image -->
                     <div class="view overlay">
-                        <img src="{{site.baseurl}}assets/images/{{ spost.image }}" class="img-fluid z-depth-1 rounded-0" alt="{{spost.title }}  image" style="max-width:70px;max-height:70px;">
-                        <a>
+                        <img src="{{site.baseurl}}/assets/images/{{ spost.image }}" class="img-fluid z-depth-1 rounded-0" alt="{{spost.title }}  image" style="max-width:70px;max-height:70px;">
+                        <a href="{{ spost.url }}">
                             <div class="mask rgba-white-slight waves-effect waves-light"></div>
                         </a>
                     </div>
@@ -85,7 +85,7 @@
                 <!-- Excerpt -->
                 <div class="col-8">
                     <h6 class="mt-0 font-small">
-                        <a>
+                        <a href="{{ spost.url }}">
                             <strong>{{ spost.title }}</strong>
                         </a>
                     </h6>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{{ title }}</title>
+    <title>{{ site.title }}</title>
     <!-- STYLESHEET -->
     {% include stylesheet.html %}
 </head>
@@ -23,7 +23,7 @@
 <main class="mt-5">
     <!-- Bootstrap Parallax -->
     <div class="view jarallax" style="height: 60vh;">
-        <img class="jarallax-img" src="{{site.baseurl}}/assets/images/huge-bg-1.jpg" alt="shayne porfolio" style="width:100%;">
+        <img class="jarallax-img" src="{{site.baseurl}}/assets/images/huge-bg-1b.jpg" alt="shayne porfolio" style="width:100%;">
         <div class="mask rgba-blue-slight">
             <div class="container flex-center text-center">
                 <div class="row mt-5">
@@ -124,7 +124,7 @@
                 </h4>
 
                 <p class="dark-grey-text">
-                    {{ post.excerpt }}
+                    {{ post.excerpt | strip_html | strip_newlines | truncate: 356}}
                 </p>
                 <a href="{{ post.url }}" class="btn btn-blue btn-rounded btn-sm waves-effect waves-light">Read more</a>
 

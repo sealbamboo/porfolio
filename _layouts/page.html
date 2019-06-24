@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{{ title }}</title>
+    <title>{{ site.title }}</title>
     <!-- STYLESHEET -->
     {% include stylesheet.html %}
 </head>
@@ -43,11 +43,21 @@
         <!-- -- -->
         {% endif %}
 
+
         <!-- IF 'Contact' page -->
         <!-- ----------------  -->
         {% if page.title == 'Contact' %}
         <!-- Section contact -->
         {%include section-contact-form.html %}
+        <!-- -- -->
+        {% endif %}
+
+
+        <!-- IF 'Categories' page -->
+        <!-- ----------------  -->
+        {% if page.select-categories %}
+        <!-- Section contact -->
+        {%include section-page-categories.html %}
         <!-- -- -->
         {% endif %}
     </div>
