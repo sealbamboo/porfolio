@@ -17,11 +17,11 @@ My raw data contains multiple text files which are related to one Twitter accoun
 <br>
 They are explored by multiple bar charts. As you can see the vast majority of my data was well increase during first 3 and last 3 months of the years.
 1. *Visualize by **Contribution***
-    ![explore raw data](/assets/images/pro_caps_data.jpg){: .md-img.md-img-1}
+    ![explore raw data]({{site.baseurl}}//assets/images/pro_caps_data.jpg){: .md-img.md-img-1}
 2. *Visualize by **Months***
-    ![explore raw data by months](/assets/images/pro_caps_data2.jpg){: .md-img.md-img-1} 
+    ![explore raw data by months]({{site.baseurl}}//assets/images/pro_caps_data2.jpg){: .md-img.md-img-1} 
 3. *Visualize by **Weekdays***
-    ![explore raw data weekdays](/assets/images/pro_caps_data3.jpg){: .md-img.md-img-1}
+    ![explore raw data weekdays]({{site.baseurl}}//assets/images/pro_caps_data3.jpg){: .md-img.md-img-1}
 
 I decided to leave these details and go further steps in my EDA process.
 
@@ -31,20 +31,20 @@ I applied some techniques here to gather more data from raw materials which will
 <br>
 There captured information are being processed by multiple techniques:
 1. ***Web scraping** technique*
-    ![EDA steps](/assets/images/pro_caps_eda.jpg){: .md-img.md-img-1}
+    ![EDA steps]({{site.baseurl}}//assets/images/pro_caps_eda.jpg){: .md-img.md-img-1}
 2. ***Before** text pre-processing*
-    ![EDA before cleaning](/assets/images/pro_caps_eda1.png){: .md-img.md-img-1}
+    ![EDA before cleaning]({{site.baseurl}}//assets/images/pro_caps_eda1.png){: .md-img.md-img-1}
 3. ***After** text pre-processing*
-    ![EDA after cleaning](/assets/images/pro_caps_eda2.png){: .md-img.md-img-1}
+    ![EDA after cleaning]({{site.baseurl}}//assets/images/pro_caps_eda2.png){: .md-img.md-img-1}
 Then, I started to stored all raw data into database. While my captured content are stored in local multiple text files.
 
 <br><br>
 ### **Model:**
 I 
 1. **Method 1**
-   ![Model 1 with topic](/assets/images/pro_caps_model.jpg){: .md-img.md-img-1}
+   ![Model 1 with topic]({{site.baseurl}}//assets/images/pro_caps_model.jpg){: .md-img.md-img-1}
 2. **Method 2**
-   ![Model 1 with topic](/assets/images/pro_caps_model.jpg){: .md-img.md-img-1}
+   ![Model 1 with topic]({{site.baseurl}}//assets/images/pro_caps_model.jpg){: .md-img.md-img-1}
 
 <br><br>
 ### **Deployment:** 
