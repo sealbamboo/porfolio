@@ -15,9 +15,9 @@ The most reason I decided to go with both tools because.
 In other words, Selenium helps me to collect job url, the scrapy helps me to collect the expected data.
 These pictures belows show the process:
 1. *Collect **Job Url***
-    ![explore raw data](/assets/images/pro_p4_data.jpg){: .md-img.md-img-1}
+    ![explore raw data]({{site.baseurl}}/assets/images/pro_p4_data.jpg){: .md-img.md-img-1}
 2. *Collect **Job Details***
-    ![explore raw data](/assets/images/pro_p4_data1.jpg){: .md-img.md-img-1}
+    ![explore raw data]({{site.baseurl}}/assets/images/pro_p4_data1.jpg){: .md-img.md-img-1}
 <br>
 Job's information will be: ***title, role, location, description and salary***
 <br>
