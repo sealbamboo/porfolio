@@ -126,7 +126,7 @@
                 <p class="dark-grey-text">
                     {{ post.excerpt | strip_html | strip_newlines | truncate: 356}}
                 </p>
-                <a href="{{ post.url }}" class="btn btn-blue btn-rounded btn-sm waves-effect waves-light">Read more</a>
+                <a href="{{site.baseurl}}/{{post.url}}" class="btn btn-blue btn-rounded btn-sm waves-effect waves-light">Read more</a>
 
                 <!-- <ul class="inline-list" style="margin-top:-1em;">
                     {% for category in post.categories %}
